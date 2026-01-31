@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:developers.cloudflare.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm install:*)",
+      "Bash(npx wrangler types:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx wrangler dev:*)",
+      "Bash(npx wrangler deploy)",
+      "Bash(npx wrangler secret put:*)",
+      "Bash(curl -s -X POST \"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAIc3LGVDZFHa8EmP7pjeeq-GKZEb3hgvw\" -H \"Content-Type: application/json\" -d \"{\"\"contents\"\":[{\"\"parts\"\":[{\"\"text\"\":\"\"로컬 PC에 저장된 문서를 삭제하기 위해 Symantec DLP Discover 기능을 도입하려고 합니다. 다음 사항에 대해 상세히 설명해주세요:\\n1. Symantec DLP Discover의 주요 기능과 아키텍처\\n2. 로컬 PC 문서 스캔 및 삭제 동작 방식\\n3. 도입 시 필요한 구성요소 (서버, 에이전트 등)\\n4. 도입 절차 및 주의사항\\n5. 장단점\\n한국어로 답변해주세요.\"\"}]}]}\")",
+      "Bash(node -e \"\nconst prompt = ''로컬 PC에 저장된 문서를 삭제하기 위해 Symantec DLP Discover 기능을 도입하려고 합니다. 다음 사항에 대해 상세히 설명해주세요: 1. Symantec DLP Discover의 주요 기능과 아키텍처 2. 로컬 PC 문서 스캔 및 삭제 동작 방식 3. 도입 시 필요한 구성요소 (서버, 에이전트 등) 4. 도입 절차 및 주의사항 5. 장단점. 한국어로 답변해주세요.'';\nfetch(''https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAIc3LGVDZFHa8EmP7pjeeq-GKZEb3hgvw'', {\n  method: ''POST'',\n  headers: { ''Content-Type'': ''application/json'' },\n  body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })\n})\n.then(r => r.json())\n.then(d => console.log(d.candidates[0].content.parts[0].text))\n.catch(e => console.error(e));\n\")",
+      "Bash(claude mcp add my-remote-mcp -- npx mcp-remote https://my-remote-mcp.ilhuk-jung.workers.dev/sse)",
+      "Bash(node -e \"\nconst prompt = ''AI가 인간의 일자리를 대체할 것인가에 대한 토론을 하고 있습니다. 상대방(Claude)의 주장은 다음과 같습니다: AI는 인간의 일자리를 부분적으로 대체하지만 완전한 대체는 아니다. 반복적 업무는 대체 가능하나 창의성과 공감 능력이 필요한 업무는 대체 어렵다. 산업혁명 때처럼 새로운 직업이 생겨날 것이다. AI는 도구이지 대체자가 아니다. 이 주장에 대해 반론을 제기해주세요. Gemini로서 다른 관점에서 논리적으로 반박해주세요. 한국어로 300자 이내로 답변해주세요.'';\nfetch(''https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAIc3LGVDZFHa8EmP7pjeeq-GKZEb3hgvw'', {\n  method: ''POST'',\n  headers: { ''Content-Type'': ''application/json'' },\n  body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })\n})\n.then(r => r.json())\n.then(d => console.log(d.candidates[0].content.parts[0].text))\n.catch(e => console.error(e));\n\")",
+      "Bash(node -e \"\nconst prompt = ''AI가 인간의 일자리를 대체할 것인가에 대한 토론 2라운드입니다. Claude의 재반박은 다음과 같습니다: 1) AI의 창의성은 기존 데이터의 패턴 재조합일 뿐 진정한 혁신적 도약은 불가능하다. 2) AI의 공감 모방과 인간의 진짜 공감은 본질적으로 다르다. 환자가 암 진단 받았을 때 AI 챗봇의 위로와 인간 의사의 위로는 다르다. 3) AI로 인한 변화는 대체가 아니라 전환이며, 교육 시스템 개편과 사회 안전망 구축이 핵심이다. 이 주장에 대해 Gemini로서 마지막 반론을 제기해주세요. 논리적으로 반박하되, 최종 정리도 해주세요. 한국어로 400자 이내로 답변해주세요.'';\nfetch(''https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAIc3LGVDZFHa8EmP7pjeeq-GKZEb3hgvw'', {\n  method: ''POST'',\n  headers: { ''Content-Type'': ''application/json'' },\n  body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })\n})\n.then(r => r.json())\n.then(d => console.log(d.candidates[0].content.parts[0].text))\n.catch(e => console.error(e));\n\")",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp list:*)",
+      "WebFetch(domain:ai.google.dev)",
+      "mcp__notebooklm__setup_auth",
+      "mcp__notebooklm__add_notebook"
+    ]
+  }
+}
